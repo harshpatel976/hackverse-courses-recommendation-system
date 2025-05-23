@@ -4,7 +4,7 @@ def fetch_results(query):
     params = {
         "engine": "google",
         "q": query,
-        "api_key": "b65c1d77a716733c37cce04f4ee74bfe07c116d76ebe2c57b0b2c444f4d926a0",
+        "api_key": #api key,
         "num": 10
     }
 
