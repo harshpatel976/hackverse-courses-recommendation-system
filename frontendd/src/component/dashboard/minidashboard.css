@@ -1,0 +1,192 @@
+/* client/src/components/miniDashboard.css */
+.mini-dashboard-container {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: fit-content;
+}
+
+.mini-dashboard-container .error-message {
+  color: #d32f2f;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mini-dashboard-container .mini-dashboard-section {
+  margin-bottom: 20px;
+}
+
+.mini-dashboard-container .user-snapshot {
+  text-align: center;
+}
+
+.mini-dashboard-container .user-avatar {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.mini-dashboard-container .user-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.mini-dashboard-container .mini-section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a73e8;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #1a73e8;
+  padding-bottom: 5px;
+}
+
+.mini-dashboard-container .stat-item {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.mini-dashboard-container .notification-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mini-dashboard-container .notification-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.mini-dashboard-container .notification-item.deadline {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.mini-dashboard-container .notification-item.update {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.mini-dashboard-container .notification-icon {
+  font-size: 16px;
+}
+
+.mini-dashboard-container .notification-message {
+  flex: 1;
+}
+
+.mini-dashboard-container .no-notifications {
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+}
+
+.mini-dashboard-container .quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mini-dashboard-container .link-button {
+  padding: 8px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.mini-dashboard-container .link-button:hover {
+  background-color: #1557b0;
+}
+
+/* Shared Button Style */
+.mini-dashboard-container .button {
+  padding: 8px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.mini-dashboard-container .button:hover {
+  background-color: #1557b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mini-dashboard-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mini-dashboard-container .user-name {
+    font-size: 16px;
+  }
+
+  .mini-dashboard-container .mini-section-title {
+    font-size: 14px;
+  }
+
+  .mini-dashboard-container .stat-item {
+    font-size: 13px;
+  }
+
+  .mini-dashboard-container .notification-item {
+    font-size: 12px;
+  }
+
+  .mini-dashboard-container .link-button,
+  .mini-dashboard-container .button {
+    font-size: 13px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mini-dashboard-container {
+    padding: 10px;
+  }
+
+  .mini-dashboard-container .user-avatar {
+    font-size: 30px;
+  }
+
+  .mini-dashboard-container .user-name {
+    font-size: 14px;
+  }
+
+  .mini-dashboard-container .mini-section-title {
+    font-size: 13px;
+  }
+
+  .mini-dashboard-container .stat-item {
+    font-size: 12px;
+  }
+
+  .mini-dashboard-container .notification-item {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  .mini-dashboard-container .link-button,
+  .mini-dashboard-container .button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

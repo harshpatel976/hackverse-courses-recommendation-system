@@ -1,0 +1,182 @@
+/* client/src/components/feedback.css */
+.feedback-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-container .feedback-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-container .error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.feedback-container .loading-message {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.feedback-container .feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-container .feedback-item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-container .course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feedback-container .feedback-submitted {
+  font-size: 14px;
+  color: #4caf50;
+  font-style: italic;
+  text-align: center;
+}
+
+.feedback-container .feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-container .feedback-rating,
+.feedback-container .feedback-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.feedback-container .feedback-rating label,
+.feedback-container .feedback-comment label {
+  font-size: 14px;
+  color: #333;
+}
+
+.feedback-container .feedback-input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.feedback-container .feedback-textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.feedback-container .feedback-submit {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-container .feedback-submit:hover {
+  background-color: #388e3c;
+}
+
+.feedback-container .no-courses {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Shared Button Style */
+.feedback-container .button {
+  padding: 8px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-container .button:hover {
+  background-color: #1557b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feedback-container {
+    padding: 15px;
+  }
+
+  .feedback-container .feedback-title {
+    font-size: 24px;
+  }
+
+  .feedback-container .feedback-item {
+    padding: 10px;
+  }
+
+  .feedback-container .course-title {
+    font-size: 16px;
+  }
+
+  .feedback-container .feedback-submit,
+  .feedback-container .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-container {
+    padding: 10px;
+  }
+
+  .feedback-container .feedback-title {
+    font-size: 20px;
+  }
+
+  .feedback-container .course-title {
+    font-size: 14px;
+  }
+
+  .feedback-container .feedback-input {
+    width: 50px;
+  }
+
+  .feedback-container .feedback-textarea {
+    min-height: 60px;
+  }
+}

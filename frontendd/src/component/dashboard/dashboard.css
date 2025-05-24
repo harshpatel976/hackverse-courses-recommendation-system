@@ -1,0 +1,310 @@
+/* client/src/components/dashboard.css */
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container .dashboard-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dashboard-container .error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.dashboard-container .dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-container .dashboard-section {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-container .dashboard-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container .section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a73e8;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 5px;
+}
+
+.dashboard-container .progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.dashboard-container .progress-bar {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  transition: width 0.5s ease-in-out;
+}
+
+.dashboard-container .progress-text {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.dashboard-container .course-list,
+.dashboard-container .task-list,
+.dashboard-container .activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-container .course-item,
+.dashboard-container .task-item,
+.dashboard-container .activity-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.dashboard-container .course-item:last-child,
+.dashboard-container .task-item:last-child,
+.dashboard-container .activity-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.dashboard-container .course-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .course-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.dashboard-container .course-button {
+  padding: 8px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.dashboard-container .course-button:hover {
+  background-color: #1557b0;
+}
+
+.dashboard-container .task-goal {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dashboard-container .task-date,
+.dashboard-container .task-priority,
+.dashboard-container .activity-action,
+.dashboard-container .activity-date {
+  font-size: 13px;
+  color: #777;
+  margin: 2px 0;
+}
+
+.dashboard-container .task-priority {
+  text-transform: capitalize;
+}
+
+.dashboard-container .no-tasks,
+.dashboard-container .no-activity {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Feedback Form Styles */
+.dashboard-container .feedback-form {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.dashboard-container .feedback-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dashboard-container .feedback-submitted {
+  font-size: 13px;
+  color: #4caf50;
+  font-style: italic;
+}
+
+.dashboard-container .feedback-rating,
+.dashboard-container .feedback-comment {
+  margin-bottom: 10px;
+}
+
+.dashboard-container .feedback-rating label,
+.dashboard-container .feedback-comment label {
+  font-size: 13px;
+  color: #333;
+  margin-right: 5px;
+}
+
+.dashboard-container .feedback-input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.dashboard-container .feedback-textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.dashboard-container .feedback-submit {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-container .feedback-submit:hover {
+  background-color: #388e3c;
+}
+
+/* Shared Button Style */
+.dashboard-container .button {
+  padding: 8px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-container .button:hover {
+  background-color: #1557b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .dashboard-container {
+    width: 100%;
+  }
+
+  .dashboard-container .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-container .section-title {
+    font-size: 16px;
+  }
+
+  .dashboard-container .dashboard-section {
+    padding: 15px;
+  }
+
+  .dashboard-container .course-button,
+  .dashboard-container .feedback-submit,
+  .dashboard-container .button {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-container .dashboard-title {
+    font-size: 20px;
+  }
+
+  .dashboard-container .progress-bar-container {
+    height: 20px;
+  }
+
+  .dashboard-container .progress-bar {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .dashboard-container .feedback-input {
+    width: 50px;
+  }
+
+  .dashboard-container .feedback-textarea {
+    min-height: 50px;
+  }
+}
