@@ -45,6 +45,6 @@ Orbital is a course recommendation system built using MERN and Python. It helps 
 This project was built during HackVerse and received praise for its practical use case and implementation efficiency.
 
 🤝 Contributors
-@jpabitraranjan
+[@jpabitraranjan](https://github.com/jpabitraranjan)
 
-@harshpatel976
+[@harshpatel976](https://github.com/harshpatel976)
