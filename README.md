@@ -4,7 +4,7 @@ Orbital is a course recommendation system built using MERN and Python. It helps 
 
 ## 🧠 Core Features
 
-- 🔍 Search-based course retrieval using SerpAPI
+- 🔍 Search-based course retrieval using SerpAPI.
 - 📝 NLP-based relevance scoring for search results
 - 🤖 Collaborative filtering logic
 - 🛠️ Backend API with Flask + Python logic
