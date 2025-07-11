@@ -49,3 +49,5 @@ This project was built during HackVerse and received praise for its practical us
 [@jpabitraranjan](https://github.com/jpabitraranjan)
 
 [@harshpatel976](https://github.com/harshpatel976)
+
+[@Pragyanshu2407](https://github.com/Pragyanshu2407)
